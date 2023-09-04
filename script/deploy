@@ -6,7 +6,7 @@ ssh ubuntu@ip-10-0-152-225 <<EOF
     . ~/.nvm/nvm.sh
     nvm install v10.11.0
     npm install
-    npm install -g nodemon pm2
-    pm2 restart ecosystem.config.js
+    sudo npm install -g nodemon pm2
+    sudo pm2 restart ecosystem.config.js
     exit
 EOF
